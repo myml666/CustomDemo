@@ -3,9 +3,7 @@ package com.itfitness.customdeom.utils
 import android.content.Context
 import android.content.Intent
 import com.itfitness.customdeom.MainActivity
-import com.itfitness.customdeom.activitys.CobWebActivity
-import com.itfitness.customdeom.activitys.ScanAnimActivity
-import com.itfitness.customdeom.activitys.TrianglePathActivity
+import com.itfitness.customdeom.activitys.*
 
 /**
  *
@@ -32,4 +30,17 @@ object JumpUtil {
     fun cobWeb(context: Context) {
         context.startActivity(Intent(context,CobWebActivity::class.java))
     }
+
+    fun changeColor(context: Context) {
+        context.startActivity(Intent(context,ChangeColorActivity::class.java))
+    }
+
+    fun loadingView(context: Context) {
+        context.startActivity(Intent(context,LoadingViewActivity::class.java))
+    }
+
+    fun animMenu(context: Context) {
+        context.startActivity(Intent(context,AnimMenuActivity::class.java))
+    }
+
 }

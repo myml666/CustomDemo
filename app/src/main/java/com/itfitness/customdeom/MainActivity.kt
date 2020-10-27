@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         demos.add("三角路径")
         demos.add("扫描动画")
         demos.add("蛛网控件")
+        demos.add("改变颜色")
+        demos.add("加载动画")
+        demos.add("菜单动画")
         if (mDemoAdapter == null) {
             mDemoAdapter = object : BaseQuickAdapter<String, BaseViewHolder>(R.layout.item_demo, demos) {
                 override fun convert(helper: BaseViewHolder, item: String) {
@@ -41,6 +44,15 @@ class MainActivity : AppCompatActivity() {
                     2 ->
                         //蛛网控件
                         JumpUtil.cobWeb(this@MainActivity)
+                    3 ->
+                        //改变颜色
+                        JumpUtil.changeColor(this@MainActivity)
+                    4 ->
+                        //加载动画
+                        JumpUtil.loadingView(this@MainActivity)
+                    5 ->
+                        //菜单动画
+                        JumpUtil.animMenu(this@MainActivity)
                 }
             }
             rv_demos.adapter = mDemoAdapter

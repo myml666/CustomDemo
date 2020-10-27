@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/rl_animcontainer"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content" android:layout_height="130dp">
+        <View
+                android:id="@+id/v_shadow"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_shadow"
+                android:layout_width="40dp"
+                android:layout_height="10dp"/>
+        <com.itfitness.customdeom.widget.LoadingShapeView
+                android:id="@+id/lsv_loading"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/v_shadow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+    </RelativeLayout>
+</FrameLayout>
